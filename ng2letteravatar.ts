@@ -275,7 +275,7 @@ export class Ng2LetterAvatar implements OnInit, OnDestroy, AfterViewInit {
     }
 
     ngOnDestroy() {
-        if (this.letteravatar) {
+        if (this.letteravatar && this.letteravatar.clear ) {
             this.letteravatar.clear();
         }
     }
