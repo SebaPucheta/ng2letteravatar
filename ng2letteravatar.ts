@@ -146,7 +146,7 @@ export class Ng2LetterAvatar implements OnInit, OnDestroy, AfterViewInit {
         return result;
     }
 
-    private createAvatar(): void {
+    protected createAvatar(): void {
         var c = '';
         if (this.charCount == '2') {
             var _data = getFirstAndLastName(this.data.toUpperCase());
